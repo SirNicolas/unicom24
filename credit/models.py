@@ -124,7 +124,9 @@ class CreditProposal(models.Model):
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
-        Token.objects.create(user=instance)
-    profiles = UserProfile.objects.filter(user=instance)
-    if not profiles.exists() and not instance.profile:
-        UserProfile.objects.create(user=instance)
+        if not hasattr(instance, 'auth_token') \
+                and instance.email != 'from_fixture':
+            Token.objects.create(user=instance)
+        if not hasattr(instance, 'profile') \
+                and instance.email != 'from_fixture':
+            UserProfile.objects.create(user=instance)

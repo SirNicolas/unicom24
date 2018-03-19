@@ -1,9 +1,15 @@
 # Установка и запуск
 pip install -r requirements.txt
 
+python manage.py migrate
+
+python manage.py loaddata --format json credit/fixtures/initial_data.json
+
 python manage.py runserver
 
 или
+
+docker-compose build
 
 docker-compose up
 

@@ -1,0 +1,574 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "authtoken",
+      "model": "token"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "credit",
+      "model": "clientform"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "credit",
+      "model": "creditproposal"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "credit",
+      "model": "offer"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "credit",
+      "model": "userprofile"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "7jyf65kzbw5352kwkyfljq3bu6lajyxn",
+    "fields": {
+      "session_data": "MjE2MDFlZGNmNGFmOTQ3OTA0ODUyZTAyOTVmODdiMWRjMzA2NDZkODp7fQ==",
+      "expire_date": "2018-04-01T11:58:13.022Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lghgjhio6d8hdtza5e3wvvbcn48x9w8a",
+    "fields": {
+      "session_data": "MTQ4MGUzMTE4MzZiZTJlOTQ3MTU5YWM3ZjkxOTAxMDBmYjYyMGVkZDp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjYmNhZjg0YjY2YzczMDM5ZGQ4OTNjYjY4MDgxOGI1MTljZTA0ZmIyIn0=",
+      "expire_date": "2018-04-01T23:52:12.171Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "p7emmwjeyb7y81ir135446mccwxac31q",
+    "fields": {
+      "session_data": "MjE2MDFlZGNmNGFmOTQ3OTA0ODUyZTAyOTVmODdiMWRjMzA2NDZkODp7fQ==",
+      "expire_date": "2018-04-01T11:58:35.940Z"
+    }
+  },
+  {
+    "model": "credit.creditproposal",
+    "pk": 1,
+    "fields": {
+      "date_created": "2018-03-18T12:07:58.638Z",
+      "date_sent": "2018-03-18T12:06:46Z",
+      "status": 1,
+      "offer": 1,
+      "client_form": 1
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add Token",
+      "content_type": 7,
+      "codename": "add_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change Token",
+      "content_type": 7,
+      "codename": "change_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete Token",
+      "content_type": 7,
+      "codename": "delete_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add \u0410\u043d\u043a\u0435\u0442\u0430 \u043a\u043b\u0438\u0435\u043d\u0442\u0430",
+      "content_type": 8,
+      "codename": "add_clientform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change \u0410\u043d\u043a\u0435\u0442\u0430 \u043a\u043b\u0438\u0435\u043d\u0442\u0430",
+      "content_type": 8,
+      "codename": "change_clientform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete \u0410\u043d\u043a\u0435\u0442\u0430 \u043a\u043b\u0438\u0435\u043d\u0442\u0430",
+      "content_type": 8,
+      "codename": "delete_clientform"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add \u0417\u0430\u044f\u0432\u043a\u0430 \u0432 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u0443\u044e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044e",
+      "content_type": 9,
+      "codename": "add_creditproposal"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change \u0417\u0430\u044f\u0432\u043a\u0430 \u0432 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u0443\u044e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044e",
+      "content_type": 9,
+      "codename": "change_creditproposal"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete \u0417\u0430\u044f\u0432\u043a\u0430 \u0432 \u043a\u0440\u0435\u0434\u0438\u0442\u043d\u0443\u044e \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044e",
+      "content_type": 9,
+      "codename": "delete_creditproposal"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add \u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+      "content_type": 10,
+      "codename": "add_offer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change \u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+      "content_type": 10,
+      "codename": "change_offer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete \u041f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435",
+      "content_type": 10,
+      "codename": "delete_offer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add \u041f\u0440\u043e\u0444\u0438\u043b\u044c \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
+      "content_type": 11,
+      "codename": "add_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change \u041f\u0440\u043e\u0444\u0438\u043b\u044c \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
+      "content_type": 11,
+      "codename": "change_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete \u041f\u0440\u043e\u0444\u0438\u043b\u044c \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
+      "content_type": 11,
+      "codename": "delete_userprofile"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$9nuM2QJTtYDY$XcbGSVZVDt1gdDpaorZlx41g99F/VNnehP+Ds+CSIKw=",
+      "last_login": "2018-03-18T23:52:12.167Z",
+      "is_superuser": true,
+      "username": "root",
+      "first_name": "",
+      "last_name": "",
+      "email": "from_fixture",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-03-18T12:01:42.667Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$BVdT22Wtm7kt$4qlNgXrrPLNEIJDYD6oCerWwRn9Fr0ktIbdppTAZNBo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "partner",
+      "first_name": "",
+      "last_name": "",
+      "email": "from_fixture",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-03-18T12:04:51.601Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$sSjfBQDFt8Ar$I0OUnXnOIT5pYsRgtZy2AJeaXV8rAKWzaIhVUsoKuWA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "credit_organization",
+      "first_name": "",
+      "last_name": "",
+      "email": "from_fixture",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-03-18T12:05:22.711Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "03175d9c3377b366c3e4d9899f68a78ac3f92621",
+    "fields": {
+      "user": 5,
+      "created": "2018-03-18T12:05:22.833Z"
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "3f072b45425eb1ebcc1dcb6822dc358010c2252a",
+    "fields": {
+      "user": 3,
+      "created": "2018-03-18T12:01:42.765Z"
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "d52e43ed6610cde190c05f83ca79077f80f14a54",
+    "fields": {
+      "user": 4,
+      "created": "2018-03-18T12:04:51.725Z"
+    }
+  },
+  {
+    "model": "credit.userprofile",
+    "pk": 3,
+    "fields": {
+      "is_credit_organization": true,
+      "is_partner": false,
+      "user": 5
+    }
+  },
+  {
+    "model": "credit.userprofile",
+    "pk": 4,
+    "fields": {
+      "is_credit_organization": false,
+      "is_partner": true,
+      "user": 4
+    }
+  },
+  {
+    "model": "credit.userprofile",
+    "pk": 5,
+    "fields": {
+      "is_credit_organization": false,
+      "is_partner": false,
+      "user": 3
+    }
+  },
+  {
+    "model": "credit.offer",
+    "pk": 1,
+    "fields": {
+      "date_created": "2018-03-18T12:06:38.943Z",
+      "date_changed": "2018-03-18T12:06:38.943Z",
+      "rotation_date_begin": "2018-03-18T12:06:05Z",
+      "rotation_date_end": "2018-03-18T12:06:07Z",
+      "offer_name": "Super credit",
+      "offer_type": 1,
+      "min_score": 100,
+      "max_score": 800,
+      "credit_organization": 5
+    }
+  },
+  {
+    "model": "credit.clientform",
+    "pk": 1,
+    "fields": {
+      "date_created": "2018-03-18T12:05:53.628Z",
+      "date_changed": "2018-03-18T12:05:53.628Z",
+      "family_name": "Test",
+      "name": "TEst",
+      "father_name": "Testovich",
+      "birth_date": "2018-03-18",
+      "phone_number": "123123123121",
+      "passport_number": "1231231231",
+      "score": 500,
+      "partner": 4
+    }
+  },
+  {
+    "model": "credit.clientform",
+    "pk": 2,
+    "fields": {
+      "date_created": "2018-03-18T16:14:32.745Z",
+      "date_changed": "2018-03-18T16:14:32.745Z",
+      "family_name": "123",
+      "name": "234",
+      "father_name": "234",
+      "birth_date": "2018-03-10",
+      "phone_number": "234234234",
+      "passport_number": "2342342344",
+      "score": 123,
+      "partner": 3
+    }
+  }
+]
