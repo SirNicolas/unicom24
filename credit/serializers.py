@@ -12,7 +12,7 @@ class OfferSerializer(serializers.ModelSerializer):
 class ClientFormSerializer(serializers.ModelSerializer):
     class Meta:
         model = ClientForm
-        fields = ('family_name', 'name', 'father_name', 'birth_date',
+        fields = ('id', 'family_name', 'name', 'father_name', 'birth_date',
                   'phone_number', 'passport_number', 'score')
 
 
