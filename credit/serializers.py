@@ -5,8 +5,8 @@ from .models import Offer, ClientForm, CreditProposal
 class OfferSerializer(serializers.ModelSerializer):
     class Meta:
         model = Offer
-        fields = ('rotation_date_begin', 'rotation_date_end', 'offer_name',
-                  'offer_type', 'min_score', 'max_score')
+        fields = ('id', 'rotation_date_begin', 'rotation_date_end',
+                  'offer_name', 'offer_type', 'min_score', 'max_score')
 
 
 class ClientFormSerializer(serializers.ModelSerializer):
@@ -16,7 +16,15 @@ class ClientFormSerializer(serializers.ModelSerializer):
                   'phone_number', 'passport_number', 'score')
 
 
-class CreditProposalSerializer(serializers.ModelSerializer):
+class BaseCreditProposalSerializer(serializers.ModelSerializer):
     class Meta:
         model = CreditProposal
-        fields = ('id', 'offer', 'status')
+        fields = ('id', 'status')
+
+
+class PartnerCreditProposalSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CreditProposal
+        fields = ('id', 'offer', 'client_form')
+
+
