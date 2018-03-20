@@ -37,10 +37,6 @@ class ClientFormCreate(generics.CreateAPIView):
         user = self.request.user
         return ClientForm.objects.filter(partner=user)
 
-    def perform_create(self, serializer):
-        user = self.request.user
-        serializer.save(partner=user)
-
 
 class CreditProposalCreate(generics.CreateAPIView):
     serializer_class = PartnerCreditProposalSerializer

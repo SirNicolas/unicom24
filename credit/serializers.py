@@ -15,6 +15,10 @@ class ClientFormSerializer(serializers.ModelSerializer):
         fields = ('id', 'family_name', 'name', 'father_name', 'birth_date',
                   'phone_number', 'passport_number', 'score')
 
+    def create(self, validated_data):
+        validated_data['partner'] = self.context['request'].user
+        return super(ClientFormSerializer, self).create(validated_data)
+
 
 class BaseCreditProposalSerializer(serializers.ModelSerializer):
     class Meta:
